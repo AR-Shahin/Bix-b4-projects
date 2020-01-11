@@ -1,0 +1,416 @@
+
+
+/* BASIC SETUP*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearfix{
+    width: 100%;
+    float: left;
+}
+/* HEADING */
+h2{
+    position: relative;
+    text-align: center;
+    font-size: 2.6rem;
+}
+h2:after{
+    content: '';
+    position: absolute;
+    width: 105px;
+    height: 1.5px;
+    background: #006cff;
+    border-radius: 50px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+h2:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 6px;
+    background: #006cff;
+    border-radius: 10px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.btn{
+    text-decoration: none;
+    transition: .6s ease-in-out;
+}
+section{
+    padding: 4rem 0;
+}
+/* btn-shahin*/
+.btn-shahin{
+    display: inline-block;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 2;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border: 2px solid #111; 
+    text-decoration: none;
+}
+a span{
+    position: relative;
+    z-index: 3;
+}
+.content-box{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn-shahin:after{
+    position: absolute;
+    content: '';
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #fff;
+    transition: .5s ease-in-out;
+    transform: scaleX(1);  
+}
+.btn-shahin:before{
+    position: absolute;
+    content: '';
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #fff;
+    transition: .5s ease-in-out;
+    transform: scaleY(1);
+
+}
+.btn-shahin:hover:before{
+    transform: scaleY(0);
+}
+.btn-shahin:hover:after{
+     transform: scaleX(0);
+}
+/* /btn-shahin*/
+
+
+/****************
+HEADER
+****************/
+header{
+    background-image: url('../Images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    height: 85vh;
+    color: #fff;
+    position: relative;
+}
+header nav{
+    padding: 1rem 0!important;
+}
+header nav .navbar-toggler-icon .fas{
+    color: #fff!important;
+    font-size: 2rem;
+}
+header nav ul li{
+    margin: 0 .8rem;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .6s ease;
+}
+header nav ul li a:hover{
+    color: #006cff;
+}
+header nav ul li .btn-drop{
+    padding: .8rem 3rem!important;
+    border-radius: 2.5rem;
+    background: #006cff;
+    color: #fff;
+    display: inline-block;
+}
+header nav ul li .btn-drop:hover{
+    color: #fff;
+}
+header .hero-section{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .hero-section h1{
+    font-size: 5.2rem;
+    font-weight: 400;
+}
+header .hero-section span{
+    color: #006cff;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+header .hero-section p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+header .hero-section .btn-box{
+    margin-top: 3.5rem;
+}
+header .hero-section .btn-hero{
+    color: #fff;
+    padding: .8rem 2.5rem;
+    background:  #006cff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: .6s;
+    border: 1px solid transparent;
+}
+header .hero-section .btn-hero:hover{
+    color: #006cff;
+    background: none;
+    border: 1px solid #006cff;
+}
+header .down{
+    width: 4rem;
+    height: 4rem;
+    background: #006cff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    bottom: -2rem;
+    margin: 0 auto;
+}
+header .down .fab{
+    padding:1rem;
+    font-size: 2rem;
+}
+
+/***********
+SERVICES SECTION
+************/
+.services-section{
+    padding: 4rem 0;
+    background-image: url(../Images/third.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 80%;
+}
+.services-section .top-part h5{
+    font-weight: 300;
+}
+.services-section p{
+    font-size: 1.6rem;
+}
+.design-section .card{
+    text-align: center;
+    border: 0;
+    padding: 1rem;
+}
+.design-section .card .icon-box{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    border: .5rem solid #006cff;
+    margin: 0 auto;
+    position: relative;
+}
+.design-section .card .icon-box .far,
+.design-section .card .icon-box .fas{
+    padding: 2.2rem;
+    color: #fff;
+    font-size: 2.4rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background: #006cff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: .6s;
+}
+.design-section .card h3{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.design-section .card p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* project-section*/
+.project-section .title{
+    margin: 2.5rem 0;
+    font-size: 1.6rem;
+}
+.project-section  .gallery{
+    padding: 2rem 0;
+}
+.project-section  .gallery h3{
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.project-section  .gallery p{
+    margin: .5rem 0;
+    font-size: 1.6rem;
+}
+.project-section  .gallery .card{
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #006cff;
+}
+.project-section  .gallery .btn-project{
+    padding: .8rem 2.5rem;
+    border-radius: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+    transition: .6s;
+    border: 1px solid #006cff;
+    background: none;
+    color: #006cff;
+   box-shadow: .5rem .4rem 1rem #ccc,-.5rem -.4rem 1rem #ccc;
+}
+.project-section  .gallery .btn-project:hover{
+   background:#006cff;
+    color: #fff;
+    box-shadow: none;
+}
+.project-section .btn-box
+{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+/* video-sec*/
+
+.video-sec{
+    background-image: url(../Images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    color: #fff;
+}
+.video-sec .far{
+    font-size: 3.2rem;
+}
+.video-sec  h3{
+    color: #006cff;
+    margin: 1.5rem 0;
+    font-size: 2.4rem;
+}
+.video-sec  p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+/* client-section" */
+
+.client-section .title{
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+}
+.client-section .testimonial{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    text-align: center;
+}
+.client-section .testimonial .card{
+    padding: 1rem;
+}
+.client-section .testimonial .img-box{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -4.5rem;
+}
+.client-section .testimonial p{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+/* footer*/
+
+footer{
+    padding: 3rem 0;
+    background: #006cff;
+    color: #fff;
+    font-weight: 300;
+}
+footer .card{
+    padding: 1.5rem;
+    background: transparent;
+}
+footer  .first p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+footer  .first ul{
+    display: flex;
+    margin-top: .5rem;
+}
+footer  .first ul li{
+    margin: 0 .8rem;
+}
+footer  .first ul li a{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+footer h5{
+    font-size: 1.6rem;
+}
+footer .first-widzet{
+    margin-top: 1rem;
+}
+footer .first-widzet li,
+footer .second-widzet li{
+    margin: .5rem 0;
+}
+footer .first-widzet li a,
+footer .second-widzet li a{
+    color: #fff;
+}
+footer .third{
+    margin-top: 1rem;
+}
+footer .third li{
+    margin: .5rem 0;
+}
+footer .third li a{
+    color: #fff;
+}
+footer .copy{
+    text-align: right;
+    cursor: pointer;
+}

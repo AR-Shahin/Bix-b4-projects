@@ -1,0 +1,148 @@
+@media only screen and (max-width:1023px){
+    html{
+        font-size: 60%;
+    }
+    header .hero-section{
+        top: 60%;
+        transform: translateY(-60%);
+    }
+    header .hero-section h1{
+        font-size: 4rem;
+    }
+    header .hero-section span{
+        font-size: 2rem;
+    }
+    header .hero-section .btn-box{
+        margin-top: 2.5rem;
+    }
+    section{
+        padding: 2rem 0;
+    }
+    .project-section  .gallery{
+        padding: 0;
+    }
+    .project-section .btn-box{
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+
+@media only screen and (max-width:767px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        height: 70vh;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    section{
+    
+    }
+    .content-box{
+        width: 90%;
+    }
+    .services-section p{
+        text-align: justify;
+    }
+    .design-section .card{
+        padding: 0;
+    }
+    .design-section .card h3{
+        font-size: 2rem;
+    }
+    .design-section .card .btm{
+        margin-bottom: 3rem;
+    }
+    .design-section .card p{
+        text-align: justify;
+        font-size: 1.5rem; 
+    }
+    .project-section .title{
+        margin: 1.5rem 0;
+    }
+    .project-section .btn-box{
+        margin-top: .5rem;
+    }
+    .video-sec  h3{
+        margin: .8rem 0
+    }
+    .video-sec  p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    }
+    .client-section .title{
+        margin-top: 1.5rem;
+    }
+    .client-section .testimonial{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .client-section .testimonial .card{
+        padding: 0;
+    }
+    footer .card{
+        padding: 0;
+        border: 0;
+    }
+    footer h5{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        height: 55vh;
+    }
+    header .hero-section h1{
+        font-size: 3rem;
+    }
+    header .hero-section .btn-box{
+        margin-top: 1.5rem;
+    }
+    .design-section .card{
+        padding: 1.5rem;
+        border: 1px solid  #006cff;
+        margin-bottom: 1rem;
+    }
+    .project-section  .gallery .card img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .project-section  .gallery h3{
+        font-size: 2rem;
+    }
+    .client-section .testimonial{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .client-section .testimonial .card{
+        margin-bottom: 1rem;
+    }
+    .client-section .testimonial .img-box{
+        margin-top: 0;
+    }
+    footer .card{
+        border: 1px solid #fff;
+        padding: 1rem;
+    }
+    footer .copy{
+        text-align: center;
+    }
+    footer{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
