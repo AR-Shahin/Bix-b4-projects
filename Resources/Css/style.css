@@ -134,18 +134,23 @@ header nav .navbar-toggler-icon .fas{
     color: #fff!important;
     font-size: 2rem;
 }
-header nav ul li{
-    margin: 0 .8rem;
+
+.active{
+    background: #006cff;
+    color: #fff;
+    
 }
 header nav ul li a{
     color: #fff;
+    padding: .8rem 2rem!important;;
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 500;
     transition: .6s ease;
+    border-radius: .2rem;
 }
 header nav ul li a:hover{
-    color: #006cff;
+    color: #fff;
 }
 header nav ul li .btn-drop{
     padding: .8rem 3rem!important;
